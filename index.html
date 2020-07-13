@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title><!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Essen Bestellen   </title>
+</head>
+<body>
+    <h1> Essen Bestellen </h1>
+    <form action="buchen.php" method="post">
+        <p>Bitte auswählen</p>
+        
+        <input type="radio" name="Anrede"   value="Frau"   />Dame
+        <input type="radio" name="Anrede"  value="Herr"      />Herr
+		
+		<input type="text" name="Vorname" required placeholder="Vorspeise " />
+		<input type="text" name="Nachname" required placeholder="Hauptgericht " />
+		<input type="text" name="Anschrift" required placeholder="Nachspeise " />
+		
+
+        <input type="submit" value="versenden" />
+    </form>
+</body>
+</html></title>
+</head>
+<body>
+    <h1>Buchungsformular </h1>
+    <form action="buchen.php" method="post">
+        <p>Bitte auswählen</p>
+        
+        <input type="radio" name="Anrede"   value="Frau"   />Dame
+        <input type="radio" name="Anrede"  value="Herr"      />Herr
+		
+		<select name="Zimmerkategorie">
+          <option value="Apartment">Apartment</option>
+          <option value="Einzelzimmer">Einzelzimmer</option>
+          <option value="Doppelzimmer">Doppelzimmer</option>
+          <option value="Familienzimmer">Familienzimmer</option>
+		  <option value="Juniorsuite">Juniorsuite</option>
+        </select>
+		
+		<input type="date" name="Datum" required placeholder="Buchung von..." />
+		<input type="date" name="Datum" required placeholder="Buchung bis..." />
+		
+		<input type="checkbox" id="info" name="Zusatzinformationen" value="Raucher">
+		<input type="checkbox" id="info" name="Zusatzinformationen" value="Haustier">
+
+
+
+        <input type="submit" value="versenden" />
+    </form>
+</body>
+</html>
